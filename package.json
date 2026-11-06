@@ -1,0 +1,15 @@
+{
+  "name": "dsh-plugin-index",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Source of the DSH plugin market index published at https://colsonSung.github.io/dsh-plugin-index/index.json",
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build-index.mjs",
+    "validate": "node tools/validate-index.mjs"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-plugin-market-index": "^0.2.1-alpha.4"
+  }
+}

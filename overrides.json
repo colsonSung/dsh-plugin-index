@@ -1,0 +1,13 @@
+{
+  "$comment": "Per-repository overrides applied on top of catalog.json. Keys are `owner/repo`.",
+  "colsonSung/dsh-vscode-ext-host": {
+    "exclude": true,
+    "reason": "插件包需要构建产物（plugin/main-host.js、plugin/dist/extension-host.js 由仓库根的 build 脚本生成），git 直装拿不到这些文件，装上也是坏的。等仓库改为提交构建产物或发布 npm 包后再收录。"
+  },
+  "colsonSung/dsh-pet": {
+    "npm": {
+      "version": "0.4.5"
+    },
+    "reason": "git 版没有提交构建出来的 lib/，而 pnpm 10 对 git 依赖执行构建脚本有 onlyBuiltDependencies 白名单限制，新环境安装必然失败；改从 npm 已发布包安装（tarball 内含 lib/index.js 与 cordis.patch.yml）。"
+  }
+}

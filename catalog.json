@@ -1,0 +1,197 @@
+{
+  "index": {
+    "title": { "en": "Ethan's DSH Plugins", "zh": "Ethan 的 DSH 插件" },
+    "description": {
+      "en": "Nine open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles and a desktop pet. They all run on your own machine.",
+      "zh": "九个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案与桌面宠物，全部运行在你自己的机器上。"
+    },
+    "categories": {
+      "ui": { "title": { "en": "Interface", "zh": "界面" } },
+      "workflow": { "title": { "en": "Workflow", "zh": "工作流" } },
+      "tools": { "title": { "en": "Tools", "zh": "工具" } },
+      "dev": { "title": { "en": "Developer", "zh": "开发者" } }
+    },
+    "labels": {
+      "local": { "title": { "en": "Local-first", "zh": "本地优先" } },
+      "productivity": { "title": { "en": "Productivity", "zh": "效率" } },
+      "collaboration": { "title": { "en": "Collaboration", "zh": "协作" } },
+      "media": { "title": { "en": "Media", "zh": "多媒体" } },
+      "desktop": { "title": { "en": "Desktop", "zh": "桌面端" } }
+    },
+    "sortKeys": {
+      "recommended": { "title": { "en": "Recommended", "zh": "推荐度" }, "order": "desc" }
+    }
+  },
+  "plugins": [
+    {
+      "repo": "colsonSung/dsh-workspace-file-preview",
+      "directory": "plugin",
+      "packageName": "dsh-workspace-file-preview",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "Workspace File Preview", "zh": "工作区文件预览" },
+      "description": {
+        "en": "Read, render and edit the workspace files you are working on inside the chat: Markdown renders as GitHub-flavoured Markdown with Mermaid blocks drawn as real diagrams, HTML, SVG and images can be annotated and handed to the agent, videos play in the same panel, and a searchable, pinnable file tree opens any file next to the conversation.",
+        "zh": "在会话里直接读、渲染与编辑工作区文件：Markdown 按 GitHub 风格渲染，Mermaid 代码块画成真正的流程图，HTML、SVG 与图片可以框选标注后交给智能体，视频在同一个面板里播放，可搜索、可置顶的文件树让任何文件在对话旁边打开。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-workspace-file-preview",
+      "category": "ui",
+      "keywords": ["markdown", "mermaid", "preview", "diagram", "svg", "html", "annotation", "editor", "video", "workspace"],
+      "labels": ["productivity"],
+      "sortKeys": { "recommended": 88 }
+    },
+    {
+      "repo": "colsonSung/dsh-moments-notes",
+      "directory": "",
+      "packageName": "@local/moments-notes",
+      "icon": "icon.svg",
+      "title": { "en": "Moments Notes", "zh": "Moments 本地笔记" },
+      "description": {
+        "en": "A local notes workspace with an always-on-top desktop float for quick capture. Notes support hierarchical tags, full-text search, random review, images, JSON backup, Markdown export and a thirty-day trash. The assistant reads and writes the same store.",
+        "zh": "本地笔记工作台，带一个始终置顶的桌面浮窗随时速记。支持层级标签、全文搜索、按天时间线、随机复习、图片附件、JSON 备份、Markdown 导出和 30 天回收站；智能体也能通过 memo 工具读写同一份笔记。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-moments-notes",
+      "category": "ui",
+      "keywords": ["notes", "memo", "markdown", "tags", "search", "desktop", "float", "backup", "pkm"],
+      "labels": ["local", "productivity", "desktop"],
+      "sortKeys": { "recommended": 86 }
+    },
+    {
+      "repo": "colsonSung/dsh-ai-voice-minutes",
+      "directory": "plugin",
+      "packageName": "@local/ai-voice-minutes",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "AI Voice Minutes", "zh": "AI 语音会议纪要" },
+      "description": {
+        "en": "Local meeting minutes: record microphone and system audio, transcribe on-device, translate live side by side, then turn it into structured minutes and Q&A. Everything prefers local models, so text leaves the machine only when you pick a cloud endpoint.",
+        "zh": "本地会议纪要：同时录制麦克风与系统声音，端侧转写、实时双语对照翻译，会议结束自动生成结构化纪要与问答。转写、纪要与翻译默认走本机模型，只有主动选择云端端点时文本才会离开本机。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-ai-voice-minutes",
+      "category": "tools",
+      "keywords": ["meeting", "minutes", "transcription", "asr", "translation", "speech", "subtitles", "audio", "recording", "local"],
+      "labels": ["local", "media", "productivity"],
+      "sortKeys": { "recommended": 84 }
+    },
+    {
+      "repo": "colsonSung/dsh-reader",
+      "directory": "plugin",
+      "packageName": "@local/reader",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "Reader", "zh": "英语精读" },
+      "description": {
+        "en": "Import EPUB, PDF, TXT, Markdown or HTML, then practise sentence by sentence: synced read-aloud, typing along the text, word-by-word comparison of your own voice, vocabulary with spaced review, and a chapter turned into a mind map or a two-voice podcast.",
+        "zh": "面向中英文书的逐句精读工作台：导入 EPUB、PDF、TXT、Markdown 或 HTML 后，可听朗读、跟读打字、朗读后与原文逐词比对，把生词收进带间隔复习的生词本，还能把当前章节生成思维导图或双人对话播客。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-reader",
+      "category": "ui",
+      "keywords": ["reader", "ebook", "epub", "pdf", "english", "vocabulary", "shadowing", "mindmap", "podcast", "reading"],
+      "labels": ["local", "productivity"],
+      "sortKeys": { "recommended": 83 }
+    },
+    {
+      "repo": "colsonSung/dsh-agent-team-board",
+      "directory": "plugin",
+      "packageName": "dsh-agent-team-board",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "Agent Team Board", "zh": "智能体团队看板" },
+      "description": {
+        "en": "A Team Board tab beside Trajectory shows how an Agent Team is cooperating: one column per teammate with shared tasks, status counts, token cost and the files they produced. Click an avatar for a member panel covering duty, artifacts, workload and spend.",
+        "zh": "在 Trajectory 旁新增「团队看板」页签，显示智能体团队如何协作：一列一个队友，列出共享任务、待办/进行中/完成计数、token 成本与实际产出的文件。点开头像可打开成员面板，查看职责、产物、工作量与消耗。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-agent-team-board",
+      "category": "ui",
+      "keywords": ["agent", "team", "board", "teammate", "multi-agent", "tasks", "token", "cost", "workload"],
+      "labels": ["collaboration", "productivity"],
+      "sortKeys": { "recommended": 82 }
+    },
+    {
+      "repo": "colsonSung/dsh-remote-control",
+      "directory": "plugin",
+      "packageName": "dsh-remote-control",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "Remote Control", "zh": "手机远程控制" },
+      "description": {
+        "en": "Drive the DeepSeek Harness agent from your phone. Scan the QR code in Settings or open the access link, and the phone loads the web app through a relay tunnel, so sessions, streaming output and tool approvals behave as on desktop. Devices can be revoked.",
+        "zh": "用手机远程操控本机的 DeepSeek Harness 智能体。在设置页扫二维码或打开访问链接，手机通过中继隧道加载真实的网页应用：会话、流式输出、工具审批和输入框与桌面端一致。可随时吊销已授权设备，宿主不会对公网开放入站端口。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-remote-control",
+      "category": "tools",
+      "keywords": ["remote", "phone", "mobile", "tunnel", "relay", "qrcode", "access-code", "control", "local"],
+      "labels": ["desktop", "productivity"],
+      "sortKeys": { "recommended": 80 }
+    },
+    {
+      "repo": "colsonSung/dsh-pet",
+      "directory": "dsh-pet",
+      "packageName": "dsh-pet",
+      "icon": "dsh-pet/assets/logo.png",
+      "title": { "en": "Desktop Pet", "zh": "桌面宠物" },
+      "description": {
+        "en": "A transparent desktop pet inside DeepSeek Harness: a hundred plus looping animations, multiple pets at once, click and drag physics, chatter and chat, session-aware work animations, to-do reminders, system notifications. Browser overlay or native window.",
+        "zh": "住在 DeepSeek Harness 里的透明桌面宠物：一百余段动画、可多开同屏、大小与位置可配，点击会 Q 弹、拖拽能甩抛，还有碎碎念与对话、跟随会话切换的工作状态动画、待办提醒和系统通知。可跑在网页浮层，也能住进桌面置顶小窗。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-pet",
+      "category": "ui",
+      "keywords": ["pet", "desktop", "animation", "overlay", "companion", "mascot", "chibi", "sprites"],
+      "labels": ["desktop", "media"],
+      "sortKeys": { "recommended": 78 }
+    },
+    {
+      "repo": "colsonSung/dsh-plugin-management",
+      "directory": "plugin",
+      "packageName": "dsh-plugin-management",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "Plugin Management", "zh": "插件管理" },
+      "description": {
+        "en": "Extends the Plugins page with an Updates tab listing every installed plugin that has a newer version, its release notes and a one-click upgrade, plus an update badge beside each title. A Share button exports a plugin to another profile.",
+        "zh": "在插件页新增「更新」页签，列出所有已安装插件中可升级的版本、发布说明与一键升级按钮，并在插件标题旁显示更新角标；插件详情页的「分享」按钮还能把插件导出给另一个 profile。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-plugin-management",
+      "category": "tools",
+      "keywords": ["plugin", "market", "update", "upgrade", "version", "share", "install", "release-notes"],
+      "labels": ["collaboration", "productivity"],
+      "sortKeys": { "recommended": 72 }
+    },
+    {
+      "repo": "colsonSung/dsh-vscode-ext-host",
+      "directory": "plugin",
+      "packageName": "dsh-vscode-extension-host",
+      "icon": "plugin/icon.svg",
+      "title": { "en": "VS Code Extension Host", "zh": "VS Code 扩展宿主" },
+      "description": {
+        "en": "Runs real VS Code extensions (VSIX) inside DeepSeek Harness: a vendored extension host runs as a child process, loads only enabled extensions whose publisher is trusted, survives crashes with backoff restarts, and exposes webview surfaces plus a model tool.",
+        "zh": "让真实的 VS Code 扩展（VSIX）跑在 DeepSeek Harness 里：内置的开源扩展宿主以子进程启动，只加载「已启用且发布者受信任」的扩展，崩溃后按退避策略重启，并提供 webview 面板与一个供模型调用、可查看并控制该进程的工具。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-vscode-ext-host",
+      "category": "dev",
+      "keywords": ["vscode", "vsix", "extension", "extension-host", "devtools", "webview", "developer", "local"],
+      "labels": ["local", "productivity"],
+      "sortKeys": { "recommended": 65 }
+    },
+    {
+      "repo": "colsonSung/dsh-purge",
+      "directory": "",
+      "packageName": "dsh-purge",
+      "icon": null,
+      "title": { "en": "Model Prompt Overrides", "zh": "模型提示词增强" },
+      "description": {
+        "en": "Replace the system prompt the Harness injects into a model: ready-made prompt sets, a per-model switch, and a default set for Chinese models. A drill console is limited to loopback and private-network targets, to tell a host-policy block from a model refusal.",
+        "zh": "可替换 DeepSeek Harness 注入给模型的系统提示词，内置多套提示词方案并支持按模型切换，默认方案面向国产模型。演练台只允许回环与内网靶场，用来分辨宿主策略拦截和模型本身拒答。支持的宿主版本各不相同，安装前请先看仓库 README。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-purge",
+      "category": "tools",
+      "keywords": ["prompt", "system-prompt", "override", "red-team", "evaluation", "security", "preset", "sandbox", "local"],
+      "labels": ["local"],
+      "sortKeys": { "recommended": 55 }
+    }
+  ]
+}
