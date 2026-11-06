@@ -16,22 +16,10 @@
           "zh": "界面"
         }
       },
-      "workflow": {
-        "title": {
-          "en": "Workflow",
-          "zh": "工作流"
-        }
-      },
       "tools": {
         "title": {
           "en": "Tools",
           "zh": "工具"
-        }
-      },
-      "dev": {
-        "title": {
-          "en": "Developer",
-          "zh": "开发者"
         }
       }
     },
