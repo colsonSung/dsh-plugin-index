@@ -17,6 +17,12 @@ https://colsonsung.github.io/dsh-plugin-index/index.json
 3. 填入上面的 URL 并保存。
 4. 回到「发现」标签页，索引下拉框里会出现 **Ethan's DSH Plugins**，选中即可浏览。
 
+![索引下拉框里选中 Ethan's DSH Plugins](docs/index-dropdown.png)
+
+选中之后，「发现」页会列出下面这些插件：
+
+![发现标签页](docs/discover-tab.png)
+
 > 索引源里的每个插件都按 commit 精确定位版本：安装的是索引发布那一刻的代码，不受仓库后续提交影响。
 
 ## 收录了哪些插件
