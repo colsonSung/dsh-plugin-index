@@ -17,7 +17,7 @@ const execFileAsync = promisify(execFile)
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = path.resolve(SCRIPT_DIR, '..')
 
-const DEFAULT_INDEX_URL = 'https://colsonSung.github.io/dsh-plugin-index/index.json'
+const DEFAULT_INDEX_URL = 'https://colsonsung.github.io/dsh-plugin-index/index.json'
 const GITHUB_API = 'https://api.github.com'
 const GITHUB_RAW = 'https://raw.githubusercontent.com'
 const USER_AGENT = 'dsh-plugin-index-validator'
