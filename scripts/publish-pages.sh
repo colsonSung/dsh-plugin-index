@@ -36,4 +36,7 @@ git -C "$WORK" \
 
 git -C "$WORK" push --quiet origin "$BRANCH"
 echo "Pushed index.json to ${REPO}@${BRANCH}"
-echo "Index URL: https://${REPO%%/*}.github.io/${REPO##*/}/index.json"
+# GitHub Pages lowercases the owner name, and DSH only accepts a canonical index URL.
+OWNER="$(printf '%s' "${REPO%%/*}" | tr '[:upper:]' '[:lower:]')"
+NAME="$(printf '%s' "${REPO##*/}" | tr '[:upper:]' '[:lower:]')"
+echo "Index URL: https://${OWNER}.github.io/${NAME}/index.json"

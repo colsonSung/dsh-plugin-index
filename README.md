@@ -5,8 +5,10 @@
 索引地址（GitHub Pages 托管）：
 
 ```
-https://colsonSung.github.io/dsh-plugin-index/index.json
+https://colsonsung.github.io/dsh-plugin-index/index.json
 ```
+
+> 粘贴时必须全小写。DSH 要求索引 URL 是规范形式，GitHub Pages 的用户名会转成小写，写成 `colsonSung` 会被拒绝并提示「Index URL is not in canonical form」。
 
 ## 怎么在 DSH 里加上这个源
 
@@ -21,7 +23,7 @@ https://colsonSung.github.io/dsh-plugin-index/index.json
 
 | 插件 | 安装源 | 说明 |
 |---|---|---|
-| Markdown 与 Mermaid 预览 | git | 在会话里预览/编辑工作区文件，框选标注交给智能体 |
+| 工作区文件预览 | git | 在会话里预览/编辑工作区文件，框选标注交给智能体，面板内播放视频 |
 | Moments 本地笔记 | git | 本地笔记工作台 + 桌面置顶速记浮窗 |
 | AI 语音会议纪要 | git | 录麦克风与系统音、端侧转写、实时双语对照、生成纪要 |
 | 英语精读 | git | 逐句精读、跟读、朗读比对、生词本、思维导图与播客 |
@@ -31,7 +33,7 @@ https://colsonSung.github.io/dsh-plugin-index/index.json
 | 模型提示词增强 | git | 替换注入给模型的系统提示词，可按模型切换 |
 | 桌面宠物 | npm | 透明动画桌宠，多开、拖拽、会话感知的工作动画 |
 
-未收录：**VS Code 扩展宿主**。它的插件包依赖构建产物（`plugin/main-host.js`、扩展宿主二进制由仓库根的 build 脚本生成），git 直装拿不到这些文件，装上也是坏的；等仓库改为提交构建产物或发布 npm 包后，在 `overrides.json` 里去掉排除项即可收录。
+未收录：**VS Code 扩展宿主**（`colsonSung/dsh-vscode-ext-host`）。它的插件包依赖构建产物（`plugin/main-host.js`、扩展宿主二进制由仓库根的 build 脚本生成），git 直装拿不到这些文件，装上也是坏的；等仓库改为提交构建产物或发布 npm 包后，在 `overrides.json` 里去掉排除项即可收录。
 
 ## 这个仓库怎么组织的
 

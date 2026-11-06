@@ -248,6 +248,27 @@ function overrideFor(overrides, repo) {
   return typeof entry === 'object' && entry !== null ? entry : undefined
 }
 
+/**
+ * The declarations the listed plugins actually use.
+ *
+ * A category, label or sort key that no listed plugin carries would still reach the Discover page
+ * as an empty filter, so the index declares only the ones in use.
+ */
+function usedDeclarations(declarations, plugins, pick) {
+  const used = new Set()
+  for (const plugin of plugins) {
+    const value = pick(plugin)
+    if (Array.isArray(value)) for (const id of value) used.add(id)
+    else if (typeof value === 'string') used.add(value)
+    else if (value !== null && typeof value === 'object') for (const id of Object.keys(value)) used.add(id)
+  }
+  const result = {}
+  for (const [id, declaration] of Object.entries(declarations ?? {})) {
+    if (used.has(id)) result[id] = declaration
+  }
+  return result
+}
+
 // ---------------------------------------------------------------------------
 // Icons
 // ---------------------------------------------------------------------------
@@ -583,16 +604,17 @@ async function main() {
     process.exit(1)
   }
 
+  const listed = plugins.filter(Boolean)
   const index = {
     format: 1,
     title: catalog.index.title,
     ...(catalog.index.description !== undefined ? { description: catalog.index.description } : {}),
     metadata: {
-      categories: catalog.index.categories ?? {},
-      labels: catalog.index.labels ?? {},
-      sortKeys: catalog.index.sortKeys ?? {},
+      categories: usedDeclarations(catalog.index.categories, listed, (plugin) => plugin.metadata.category),
+      labels: usedDeclarations(catalog.index.labels, listed, (plugin) => plugin.metadata.labels),
+      sortKeys: usedDeclarations(catalog.index.sortKeys, listed, (plugin) => plugin.metadata.sortKeys),
     },
-    plugins: plugins.filter(Boolean),
+    plugins: listed,
   }
 
   await writeFile(options.out, `${JSON.stringify(index, null, 2)}\n`, 'utf8')
