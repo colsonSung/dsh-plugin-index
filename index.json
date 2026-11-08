@@ -157,12 +157,12 @@
       },
       "versions": [
         {
-          "version": "3.0.0",
-          "publishTimestamp": 1793892715,
+          "version": "3.1.0",
+          "publishTimestamp": 1794106144,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-moments-notes",
-            "commit": "347a90b8511ccbf9e286eaa5fc856315fc6b58e7"
+            "commit": "cd2c508e4c8cda55a6024874f2a640cf698cab32"
           }
         }
       ]
@@ -261,12 +261,12 @@
       },
       "versions": [
         {
-          "version": "1.3.0",
-          "publishTimestamp": 1793892714,
+          "version": "1.5.0",
+          "publishTimestamp": 1794108193,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-reader",
-            "commit": "900e5d8e803f7b71710de07d5629a8bc0d952ea0",
+            "commit": "d2841609215a2cc156363a9d0b34fb9a80200296",
             "path": "plugin"
           }
         }
@@ -363,12 +363,12 @@
       },
       "versions": [
         {
-          "version": "1.5.4",
-          "publishTimestamp": 1793892713,
+          "version": "1.5.5",
+          "publishTimestamp": 1794106112,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-remote-control",
-            "commit": "57f34f2c5a772c2231057dd396c8080bf595506d",
+            "commit": "54b86f988957e6fb826d84def965842626c00f9f",
             "path": "plugin"
           }
         }
@@ -515,6 +515,56 @@
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-purge",
             "commit": "160b9114cbad7beca3d4d3f9f027ec843bf46f5e"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-chatbox-pet",
+      "title": {
+        "en": "Chatbox Pet",
+        "zh": "输入框伴侣"
+      },
+      "description": {
+        "en": "A Pikachu pinned to the composer's top-right. Idle most of the time, it moves only when the agent's work state changes — and a finished task, a stopped one and a failed one each get their own clip and sound. Call it by name in the composer (no send) and it answers; right-click to make it say a line you give it, keep the lines it said before, bring up something from your memory / meeting minutes / reading shelf / moments, or play one of 17 animations. The prompt booster ships in the same bundle as a second, independently toggleable feature.",
+        "zh": "挂在输入框右上角的皮卡丘。大部分时间安静待着，只在智能体工作状态变化时动一下，并且「完成 / 被中止 / 失败」三种结局各有自己的动作与音效。在输入框里喊它的名字（不用发送）它会回应；右键可以让它说指定的话、记住说过的台词、从你的记忆 / 会议纪要 / 读书 / 随手记里挑一件事说出来，或者播放 17 个动作之一。提示词增强作为第二个可独立开关的功能合在同一个 bundle 里。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSI0IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE4IiByeD0iOSIgc3Ryb2tlPSJ1cmwoI2NicC1ib3gpIiBzdHJva2Utd2lkdGg9IjIuNCIvPgogIDxwYXRoIGQ9Ik04IDIwaDEyTTggMjVoNyIgc3Ryb2tlPSJ1cmwoI2NicC1ib3gpIiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjkiIHI9IjYuNSIgZmlsbD0idXJsKCNjYnAtcGV0KSIvPgogIDxwYXRoIGQ9Ik0yMy4yIDYuNmwtMS42LTMuMiAzLjQgMS40TTI4LjggNi42bDEuNi0zLjItMy40IDEuNCIgZmlsbD0idXJsKCNjYnAtcGV0KSIvPgogIDxjaXJjbGUgY3g9IjI0LjIiIGN5PSI4LjYiIHI9IjAuOSIgZmlsbD0iIzViM2EwMCIvPgogIDxjaXJjbGUgY3g9IjI3LjgiIGN5PSI4LjYiIHI9IjAuOSIgZmlsbD0iIzViM2EwMCIvPgogIDxwYXRoIGQ9Ik0yNS4yIDExLjJjLjUuNSAxLjEuNSAxLjYgMCIgc3Ryb2tlPSIjNWIzYTAwIiBzdHJva2Utd2lkdGg9IjAuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImNicC1ib3giIHgxPSI0IiB5MT0iMTQiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNCNDY5MEUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOEE0RjBBIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYnAtcGV0IiB4MT0iMTkuNSIgeTE9IjIuNSIgeDI9IjMyLjUiIHkyPSIxNS41IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGRkQzNEQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRjBBMDIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KPC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-chatbox-pet",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-chatbox-pet",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "pet",
+          "pikachu",
+          "companion",
+          "animation",
+          "status",
+          "sound",
+          "chat",
+          "prompt",
+          "composer"
+        ],
+        "labels": [
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 78
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794109677,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-chatbox-pet",
+            "commit": "72481593ae3e9fc8ca58d822a5d5f495d1a34111",
+            "path": "plugin"
           }
         }
       ]
