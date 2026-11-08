@@ -209,12 +209,12 @@
       },
       "versions": [
         {
-          "version": "3.6.16",
-          "publishTimestamp": 1793892826,
+          "version": "3.7.0",
+          "publishTimestamp": 1794126247,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-ai-voice-minutes",
-            "commit": "651a6a3c37eeba3f67fb0a661c179dc8f285a0ff",
+            "commit": "007d9c96fd46cc418e92071a7b13745ad883ff34",
             "path": "plugin"
           }
         }
