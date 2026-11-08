@@ -124,12 +124,33 @@ async function githubToken() {
   return cachedToken
 }
 
+/**
+ * One GET, with a few retries.
+ *
+ * raw.githubusercontent.com drops connections often enough that a single
+ * attempt fails roughly one build in three, and one failed plugin aborts
+ * the whole index. The failures are transient, so the answer is to try
+ * again rather than to publish a half-built index.
+ */
 async function fetchWithHeaders(url, headers) {
-  const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers } })
-  if (!response.ok) {
-    throw new Error(`GET ${url} -> HTTP ${response.status} ${response.statusText}`)
+  let lastError
+  for (let attempt = 1; attempt <= 4; attempt += 1) {
+    try {
+      const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers } })
+      if (!response.ok) {
+        throw new Error(`GET ${url} -> HTTP ${response.status} ${response.statusText}`)
+      }
+      return response
+    } catch (error) {
+      lastError = error
+      if (attempt < 4) {
+        // A dropped connection is not the same as a slow one: wait a little
+        // and try the same URL again.
+        await new Promise((resolve) => setTimeout(resolve, 1500 * attempt))
+      }
+    }
   }
-  return response
+  throw lastError
 }
 
 async function fetchApiJson(url) {
