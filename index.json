@@ -5,8 +5,8 @@
     "zh": "Ethan 的 DSH 插件"
   },
   "description": {
-    "en": "Nine open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles and a desktop pet. They all run on your own machine.",
-    "zh": "九个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案与桌面宠物，全部运行在你自己的机器上。"
+    "en": "Ten open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet and a chatbox companion. They all run on your own machine.",
+    "zh": "十个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物与输入框伴侣，全部运行在你自己的机器上。"
   },
   "metadata": {
     "categories": {
