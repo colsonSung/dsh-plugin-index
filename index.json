@@ -5,8 +5,8 @@
     "zh": "Ethan 的 DSH 插件"
   },
   "description": {
-    "en": "Ten open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet and a chatbox companion. They all run on your own machine.",
-    "zh": "十个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物与输入框伴侣，全部运行在你自己的机器上。"
+    "en": "Eleven open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet a chatbox companion and a video reader that transcribes, separates speakers and reads on-screen subtitles locally. They all run on your own machine.",
+    "zh": "十一个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物、输入框伴侣，以及本地转写 + 说话人分离 + 画面字幕识别的视频理解，全部运行在你自己的机器上。"
   },
   "metadata": {
     "categories": {
@@ -106,19 +106,19 @@
       },
       "versions": [
         {
-          "version": "1.2.0",
-          "publishTimestamp": 1793950075,
+          "version": "1.3.0",
+          "publishTimestamp": 1794201801,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-workspace-file-preview",
-            "commit": "1fd9153be692e291f7c636254bc05c01daf52194",
+            "commit": "3dbc2c3f075bd111a8c1bc2a447c031cd66958db",
             "path": "plugin"
           }
         }
       ]
     },
     {
-      "name": "@local/moments-notes",
+      "name": "dsh-moments-notes",
       "title": {
         "en": "Moments Notes",
         "zh": "Moments 本地笔记"
@@ -131,7 +131,8 @@
       "author": "colsonSung",
       "homepage": "https://github.com/colsonSung/dsh-moments-notes",
       "repository": {
-        "url": "https://github.com/colsonSung/dsh-moments-notes"
+        "url": "https://github.com/colsonSung/dsh-moments-notes",
+        "directory": "plugin"
       },
       "metadata": {
         "category": "ui",
@@ -157,12 +158,13 @@
       },
       "versions": [
         {
-          "version": "3.1.0",
-          "publishTimestamp": 1794106144,
+          "version": "3.4.0",
+          "publishTimestamp": 1794290397,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-moments-notes",
-            "commit": "cd2c508e4c8cda55a6024874f2a640cf698cab32"
+            "commit": "7686e676be824b6789907cb45eda3821e5f9b4c7",
+            "path": "plugin"
           }
         }
       ]
@@ -261,12 +263,12 @@
       },
       "versions": [
         {
-          "version": "1.5.0",
-          "publishTimestamp": 1794108193,
+          "version": "1.6.0",
+          "publishTimestamp": 1794137859,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-reader",
-            "commit": "d2841609215a2cc156363a9d0b34fb9a80200296",
+            "commit": "c86f5d9a1f943ded63b7f984bded1979d1fc8ebe",
             "path": "plugin"
           }
         }
@@ -364,11 +366,11 @@
       "versions": [
         {
           "version": "1.5.5",
-          "publishTimestamp": 1794106112,
+          "publishTimestamp": 1794140559,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-remote-control",
-            "commit": "54b86f988957e6fb826d84def965842626c00f9f",
+            "commit": "b557953316d10a1e4575e54d8c0d979a19b15feb",
             "path": "plugin"
           }
         }
@@ -561,12 +563,66 @@
       },
       "versions": [
         {
-          "version": "0.2.0",
-          "publishTimestamp": 1794127998,
+          "version": "0.2.1",
+          "publishTimestamp": 1794196050,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-chatbox-pet",
-            "commit": "754ed109e89ccdd31a08df42d25ce9ac743c5876",
+            "commit": "ff421d87ea9cb66816313bf3068b1f48254b121d",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-video-lens",
+      "title": {
+        "en": "Video Lens",
+        "zh": "视频理解"
+      },
+      "description": {
+        "en": "A host tool that lets the model actually watch a video: hand it a local file or a YouTube / X / Bilibili / TikTok / Vimeo link and get metadata, a timestamped transcript with speaker labels, the burned-in subtitles read off the frames, and keyframe images it can open. Transcription, speaker diarization and OCR all run on your machine — no cloud ASR, no upload — and WeChat Channels links are refused with an explanation and a workaround instead of being faked.",
+        "zh": "让模型真正看懂视频的宿主工具：传入本地文件或 YouTube / X / Bilibili / TikTok / 抖音 / Vimeo 链接，返回元数据、带时间码与说话人标签的逐段转写、画面烧录字幕（OCR）以及可以逐张查看的关键帧。转写、说话人分离、OCR 全部在本机完成，不上传音频也不调云端 ASR；微信视频号没有公开直链，明确拒绝并给出导出/录屏的替代做法，不假装解析。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxYzFjMWUiLz4KICA8cmVjdCB4PSIxMiIgeT0iMTciIHdpZHRoPSI0MCIgaGVpZ2h0PSIyNiIgcng9IjUiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8cGF0aCBkPSJNMTIgMjNoNDBNMTIgMzdoNDAiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii40NSIvPgogIDxwYXRoIGQ9Ik0xOCAxN3Y2TTI2IDE3djZNMzQgMTd2Nk00MiAxN3Y2TTE4IDM3djZNMjYgMzd2Nk0zNCAzN3Y2TTQyIDM3djYiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii40NSIvPgogIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzAiIHI9IjciIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8cGF0aCBkPSJNMzcuNSAzNS41IDQzIDQxIiBzdHJva2U9IiNGRkM0NkIiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMjQgNTBoMTYiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KPC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-video-lens",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-video-lens",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "video",
+          "transcript",
+          "subtitle",
+          "ocr",
+          "diarization",
+          "speaker",
+          "youtube",
+          "bilibili",
+          "twitter",
+          "frames",
+          "ffmpeg",
+          "whisper"
+        ],
+        "labels": [
+          "local",
+          "media"
+        ],
+        "sortKeys": {
+          "recommended": 79
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794306259,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-video-lens",
+            "commit": "9af6a0d42c6508c7eb944c4a35ad84a4c3c9a23b",
             "path": "plugin"
           }
         }

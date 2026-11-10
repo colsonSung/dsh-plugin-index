@@ -5,8 +5,8 @@
       "zh": "Ethan 的 DSH 插件"
     },
     "description": {
-      "en": "Ten open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet and a chatbox companion. They all run on your own machine.",
-      "zh": "十个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物与输入框伴侣，全部运行在你自己的机器上。"
+      "en": "Eleven open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet a chatbox companion and a video reader that transcribes, separates speakers and reads on-screen subtitles locally. They all run on your own machine.",
+      "zh": "十一个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物、输入框伴侣，以及本地转写 + 说话人分离 + 画面字幕识别的视频理解，全部运行在你自己的机器上。"
     },
     "categories": {
       "ui": {
@@ -114,9 +114,9 @@
     },
     {
       "repo": "colsonSung/dsh-moments-notes",
-      "directory": "",
-      "packageName": "@local/moments-notes",
-      "icon": "icon.svg",
+      "directory": "plugin",
+      "packageName": "dsh-moments-notes",
+      "icon": "plugin/icon.svg",
       "title": {
         "en": "Moments Notes",
         "zh": "Moments 本地笔记"
@@ -462,6 +462,44 @@
       ],
       "sortKeys": {
         "recommended": 78
+      }
+    },
+    {
+      "repo": "colsonSung/dsh-video-lens",
+      "directory": "plugin",
+      "packageName": "dsh-video-lens",
+      "icon": "plugin/icon.svg",
+      "title": {
+        "en": "Video Lens",
+        "zh": "视频理解"
+      },
+      "description": {
+        "en": "A host tool that lets the model actually watch a video: hand it a local file or a YouTube / X / Bilibili / TikTok / Vimeo link and get metadata, a timestamped transcript with speaker labels, the burned-in subtitles read off the frames, and keyframe images it can open. Transcription, speaker diarization and OCR all run on your machine — no cloud ASR, no upload — and WeChat Channels links are refused with an explanation and a workaround instead of being faked.",
+        "zh": "让模型真正看懂视频的宿主工具：传入本地文件或 YouTube / X / Bilibili / TikTok / 抖音 / Vimeo 链接，返回元数据、带时间码与说话人标签的逐段转写、画面烧录字幕（OCR）以及可以逐张查看的关键帧。转写、说话人分离、OCR 全部在本机完成，不上传音频也不调云端 ASR；微信视频号没有公开直链，明确拒绝并给出导出/录屏的替代做法，不假装解析。"
+      },
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-video-lens",
+      "category": "tools",
+      "keywords": [
+        "video",
+        "transcript",
+        "subtitle",
+        "ocr",
+        "diarization",
+        "speaker",
+        "youtube",
+        "bilibili",
+        "twitter",
+        "frames",
+        "ffmpeg",
+        "whisper"
+      ],
+      "labels": [
+        "local",
+        "media"
+      ],
+      "sortKeys": {
+        "recommended": 79
       }
     }
   ]
