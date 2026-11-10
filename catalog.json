@@ -5,8 +5,8 @@
       "zh": "Ethan 的 DSH 插件"
     },
     "description": {
-      "en": "Eleven open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet a chatbox companion and a video reader that transcribes, separates speakers and reads on-screen subtitles locally. They all run on your own machine.",
-      "zh": "十一个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物、输入框伴侣，以及本地转写 + 说话人分离 + 画面字幕识别的视频理解，全部运行在你自己的机器上。"
+      "en": "Ten open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet a chatbox companion and a video reader that transcribes, separates speakers and reads on-screen subtitles locally. They all run on your own machine.",
+      "zh": "十个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物与输入框伴侣（它同时负责本地转写、说话人分离与画面字幕识别），全部运行在你自己的机器上。"
     },
     "categories": {
       "ui": {
@@ -437,8 +437,8 @@
         "zh": "输入框伴侣"
       },
       "description": {
-        "en": "A Pikachu pinned to the composer's top-right. Idle most of the time, it moves only when the agent's work state changes — and a finished task, a stopped one and a failed one each get their own clip and sound. Call it by name in the composer (no send) and it answers; right-click to make it say a line you give it, keep the lines it said before, bring up something from your memory / meeting minutes / reading shelf / moments, or play one of 17 animations. The prompt booster ships in the same bundle as a second, independently toggleable feature. A merge chip also folds 2–8 queued follow-ups into one coherent message while the agent is busy.",
-        "zh": "挂在输入框右上角的皮卡丘。大部分时间安静待着，只在智能体工作状态变化时动一下，并且「完成 / 被中止 / 失败」三种结局各有自己的动作与音效。在输入框里喊它的名字（不用发送）它会回应；右键可以让它说指定的话、记住说过的台词、从你的记忆 / 会议纪要 / 读书 / 随手记里挑一件事说出来，或者播放 17 个动作之一。提示词增强作为第二个可独立开关的功能合在同一个 bundle 里。 智能体忙的时候，还能把 2–8 条排队消息合并成一条完整请求。"
+        "en": "A Pikachu pinned to the composer's top-right. Idle most of the time, it moves only when the agent's work state changes — and a finished task, a stopped one and a failed one each get their own clip and sound. Call it by name in the composer (no send) and it answers; right-click to make it say a line you give it, keep the lines it said before, bring up something from your memory / meeting minutes / reading shelf / moments, or play one of 17 animations. The prompt booster ships in the same bundle as a second, independently toggleable feature. A merge chip also folds 2–8 queued follow-ups into one coherent message while the agent is busy. The same bundle now reads videos: hand it a file or a YouTube / X / Bilibili link and it returns a timestamped transcript with speaker labels, OCR'd on-screen subtitles and keyframes, all locally.",
+        "zh": "挂在输入框右上角的皮卡丘。大部分时间安静待着，只在智能体工作状态变化时动一下，并且「完成 / 被中止 / 失败」三种结局各有自己的动作与音效。在输入框里喊它的名字（不用发送）它会回应；右键可以让它说指定的话、记住说过的台词、从你的记忆 / 会议纪要 / 读书 / 随手记里挑一件事说出来，或者播放 17 个动作之一。提示词增强作为第二个可独立开关的功能合在同一个 bundle 里。 智能体忙的时候，还能把 2–8 条排队消息合并成一条完整请求同一个 bundle 现在还能看视频：传文件或贴 YouTube / X / Bilibili 链接，返回带时间码与说话人标签的转写、画面烧录字幕（OCR）与关键帧，全部在本机完成。"
       },
       "author": "colsonSung",
       "homepage": "https://github.com/colsonSung/dsh-chatbox-pet",
@@ -462,44 +462,6 @@
       ],
       "sortKeys": {
         "recommended": 78
-      }
-    },
-    {
-      "repo": "colsonSung/dsh-video-lens",
-      "directory": "plugin",
-      "packageName": "dsh-video-lens",
-      "icon": "plugin/icon.svg",
-      "title": {
-        "en": "Video Lens",
-        "zh": "视频理解"
-      },
-      "description": {
-        "en": "A host tool that lets the model actually watch a video: hand it a local file or a YouTube / X / Bilibili / TikTok / Vimeo link and get metadata, a timestamped transcript with speaker labels, the burned-in subtitles read off the frames, and keyframe images it can open. Transcription, speaker diarization and OCR all run on your machine — no cloud ASR, no upload — and WeChat Channels links are refused with an explanation and a workaround instead of being faked.",
-        "zh": "让模型真正看懂视频的宿主工具：传入本地文件或 YouTube / X / Bilibili / TikTok / 抖音 / Vimeo 链接，返回元数据、带时间码与说话人标签的逐段转写、画面烧录字幕（OCR）以及可以逐张查看的关键帧。转写、说话人分离、OCR 全部在本机完成，不上传音频也不调云端 ASR；微信视频号没有公开直链，明确拒绝并给出导出/录屏的替代做法，不假装解析。"
-      },
-      "author": "colsonSung",
-      "homepage": "https://github.com/colsonSung/dsh-video-lens",
-      "category": "tools",
-      "keywords": [
-        "video",
-        "transcript",
-        "subtitle",
-        "ocr",
-        "diarization",
-        "speaker",
-        "youtube",
-        "bilibili",
-        "twitter",
-        "frames",
-        "ffmpeg",
-        "whisper"
-      ],
-      "labels": [
-        "local",
-        "media"
-      ],
-      "sortKeys": {
-        "recommended": 79
       }
     }
   ]
