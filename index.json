@@ -1,0 +1,632 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Ethan's DSH Plugins",
+    "zh": "Ethan 的 DSH 插件"
+  },
+  "description": {
+    "en": "Eleven open-source plugins for DeepSeek Harness: an Agent Team board, local meeting minutes, Markdown and Mermaid preview, a sentence-level reading studio, local notes, phone remote control, plugin management, model prompt profiles, a desktop pet a chatbox companion and a video reader that transcribes, separates speakers and reads on-screen subtitles locally. They all run on your own machine.",
+    "zh": "十一个面向 DeepSeek Harness 的开源插件：智能体团队看板、本地会议纪要、Markdown 与 Mermaid 预览、逐句精读工作台、本地笔记、手机远程控制、插件管理、模型提示词方案、桌面宠物、输入框伴侣，以及本地转写 + 说话人分离 + 画面字幕识别的视频理解，全部运行在你自己的机器上。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "Interface",
+          "zh": "界面"
+        }
+      },
+      "tools": {
+        "title": {
+          "en": "Tools",
+          "zh": "工具"
+        }
+      }
+    },
+    "labels": {
+      "local": {
+        "title": {
+          "en": "Local-first",
+          "zh": "本地优先"
+        }
+      },
+      "productivity": {
+        "title": {
+          "en": "Productivity",
+          "zh": "效率"
+        }
+      },
+      "collaboration": {
+        "title": {
+          "en": "Collaboration",
+          "zh": "协作"
+        }
+      },
+      "media": {
+        "title": {
+          "en": "Media",
+          "zh": "多媒体"
+        }
+      },
+      "desktop": {
+        "title": {
+          "en": "Desktop",
+          "zh": "桌面端"
+        }
+      }
+    },
+    "sortKeys": {
+      "recommended": {
+        "title": {
+          "en": "Recommended",
+          "zh": "推荐度"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-workspace-file-preview",
+      "title": {
+        "en": "Workspace File Preview",
+        "zh": "工作区文件预览"
+      },
+      "description": {
+        "en": "Read, render and edit the workspace files you are working on inside the chat: Markdown renders as GitHub-flavoured Markdown with Mermaid blocks drawn as real diagrams, HTML, SVG and images can be annotated and handed to the agent, videos play in the same panel, and a searchable, pinnable file tree opens any file next to the conversation.",
+        "zh": "在会话里直接读、渲染与编辑工作区文件：Markdown 按 GitHub 风格渲染，Mermaid 代码块画成真正的流程图，HTML、SVG 与图片可以框选标注后交给智能体，视频在同一个面板里播放，可搜索、可置顶的文件树让任何文件在对话旁边打开。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSI0LjUiIHk9IjMuNSIgd2lkdGg9IjE2IiBoZWlnaHQ9IjI5IiByeD0iMy4yIiBzdHJva2U9InVybCgjd2ZwLWRvYykiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik05IDEwaDdNOSAxNC41aDUiIHN0cm9rZT0idXJsKCN3ZnAtZG9jKSIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxyZWN0IHg9IjE3IiB5PSIxOSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE0IiByeD0iMyIgZmlsbD0idXJsKCN3ZnAtZmxvdykiLz4KICA8cmVjdCB4PSIyMC42IiB5PSIyMi44IiB3aWR0aD0iMy44IiBoZWlnaHQ9IjMiIHJ4PSIxIiBmaWxsPSIjRkZGRkZGIi8+CiAgPHJlY3QgeD0iMjUuNiIgeT0iMjcuMiIgd2lkdGg9IjMuOCIgaGVpZ2h0PSIzIiByeD0iMSIgZmlsbD0iI0ZGRkZGRiIvPgogIDxwYXRoIGQ9Ik0yMi41IDI1Ljh2MS4xYzAgLjQuMy43LjcuN0gyNS41IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id2ZwLWRvYyIgeDE9IjEyLjUiIHkxPSIzLjUiIHgyPSIxMi41IiB5Mj0iMzIuNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNjdDN0ZFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNGNzdEOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0id2ZwLWZsb3ciIHgxPSIyNC41IiB5MT0iMTkiIHgyPSIyNC41IiB5Mj0iMzMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzY5QjlGRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMjRERTIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgo8L3N2Zz4K",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-workspace-file-preview",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-workspace-file-preview",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "markdown",
+          "mermaid",
+          "preview",
+          "diagram",
+          "svg",
+          "html",
+          "annotation",
+          "editor",
+          "video",
+          "workspace"
+        ],
+        "labels": [
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 88
+        }
+      },
+      "versions": [
+        {
+          "version": "1.3.0",
+          "publishTimestamp": 1794201801,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-workspace-file-preview",
+            "commit": "3dbc2c3f075bd111a8c1bc2a447c031cd66958db",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-moments-notes",
+      "title": {
+        "en": "Moments Notes",
+        "zh": "Moments 本地笔记"
+      },
+      "description": {
+        "en": "A local notes workspace with an always-on-top desktop float for quick capture. Notes support hierarchical tags, full-text search, random review, images, JSON backup, Markdown export and a thirty-day trash. The assistant reads and writes the same store.",
+        "zh": "本地笔记工作台，带一个始终置顶的桌面浮窗随时速记。支持层级标签、全文搜索、按天时间线、随机复习、图片附件、JSON 备份、Markdown 导出和 30 天回收站；智能体也能通过 memo 工具读写同一份笔记。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik1vbWVudHMiPgogIDx0aXRsZT5Nb21lbnRzPC90aXRsZT4KICA8cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSIxNiIgZmlsbD0iI2I1NDAyYSIvPgogIDxyZWN0IHg9IjQuNzUiIHk9IjQuNzUiIHdpZHRoPSI1NC41IiBoZWlnaHQ9IjU0LjUiIHJ4PSIxNS4yNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utb3BhY2l0eT0iLjE2Ii8+CiAgPHBhdGggZD0iTTE5IDQzVjIxYzAtMy4yIDMuNC00LjUgNS4yLTEuN0wzMiAzMC40bDcuOC0xMS4xYzEuOC0yLjggNS4yLTEuNSA1LjIgMS43djIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmY5ZjQiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSI0My41IiByPSIzIiBmaWxsPSIjZjJlMmRhIi8+Cjwvc3ZnPgo=",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-moments-notes",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-moments-notes",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "notes",
+          "memo",
+          "markdown",
+          "tags",
+          "search",
+          "desktop",
+          "float",
+          "backup",
+          "pkm"
+        ],
+        "labels": [
+          "local",
+          "productivity",
+          "desktop"
+        ],
+        "sortKeys": {
+          "recommended": 86
+        }
+      },
+      "versions": [
+        {
+          "version": "3.4.0",
+          "publishTimestamp": 1794290397,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-moments-notes",
+            "commit": "7686e676be824b6789907cb45eda3821e5f9b4c7",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/ai-voice-minutes",
+      "title": {
+        "en": "AI Voice Minutes",
+        "zh": "AI 语音会议纪要"
+      },
+      "description": {
+        "en": "Local meeting minutes: record microphone and system audio, transcribe on-device, translate live side by side, then turn it into structured minutes and Q&A. Everything prefers local models, so text leaves the machine only when you pick a cloud endpoint.",
+        "zh": "本地会议纪要：同时录制麦克风与系统声音，端侧转写、实时双语对照翻译，会议结束自动生成结构化纪要与问答。转写、纪要与翻译默认走本机模型，只有主动选择云端端点时文本才会离开本机。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkxvY2FsIEFJIE1pbnV0ZXMiPgogIDxyZWN0IHg9IjYiIHk9IjEwIiB3aWR0aD0iNTIiIGhlaWdodD0iNDQiIHJ4PSIxMiIgZmlsbD0iIzFjMWMyNyIgc3Ryb2tlPSIjM2EzYTRkIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSIyNyIgeT0iMTkiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxOCIgcng9IjUiIGZpbGw9IiM0ZDhkZmYiLz4KICA8cGF0aCBkPSJNMjIgMzJhMTAgMTAgMCAwIDAgMjAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNGQ4ZGZmIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0zMiA0MnY2IiBzdHJva2U9IiM0ZDhkZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE0IDI2aDVNMTQgMzRoNU00NSAyNmg1TTQ1IDM0aDUiIHN0cm9rZT0iIzhmOGZhOCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-ai-voice-minutes",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-ai-voice-minutes",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "meeting",
+          "minutes",
+          "transcription",
+          "asr",
+          "translation",
+          "speech",
+          "subtitles",
+          "audio",
+          "recording",
+          "local"
+        ],
+        "labels": [
+          "local",
+          "media",
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 84
+        }
+      },
+      "versions": [
+        {
+          "version": "3.7.0",
+          "publishTimestamp": 1794127277,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-ai-voice-minutes",
+            "commit": "426a5b570fe0452cf770958d15af2c987b009240",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/reader",
+      "title": {
+        "en": "Reader",
+        "zh": "英语精读"
+      },
+      "description": {
+        "en": "Import EPUB, PDF, TXT, Markdown or HTML, then practise sentence by sentence: synced read-aloud, typing along the text, word-by-word comparison of your own voice, vocabulary with spaced review, and a chapter turned into a mind map or a two-voice podcast.",
+        "zh": "面向中英文书的逐句精读工作台：导入 EPUB、PDF、TXT、Markdown 或 HTML 后，可听朗读、跟读打字、朗读后与原文逐词比对，把生词收进带间隔复习的生词本，还能把当前章节生成思维导图或双人对话播客。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkVuZ2xpc2ggUmVhZGVyIj4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNCIgZmlsbD0iIzFmNmZlYiIvPgogIDxwYXRoIGQ9Ik0xMyAxOC41aDEyLjJjMS45IDAgMy42IDEgNC44IDIuNiAxLjItMS42IDIuOS0yLjYgNC44LTIuNkg0N2EyIDIgMCAwIDEgMiAydjIyLjlhMiAyIDAgMCAxLTIgMkgzNS42Yy0xLjkgMC0zLjYgMS00LjggMi42LTEuMi0xLjYtMi45LTIuNi00LjgtMi42SDEzYTIgMiAwIDAgMS0yLTJWMjAuNWEyIDIgMCAwIDEgMi0yeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMuMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0zMC44IDIxLjF2MjQuOSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE3LjYgMjYuNmg3TTE3LjYgMzIuNmg3IiBzdHJva2U9IiM4ZmQzZmYiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMzkuNCAyNi42aDdNMzkuNCAzMi42aDciIHN0cm9rZT0iIzhmZDNmZiIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-reader",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-reader",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "reader",
+          "ebook",
+          "epub",
+          "pdf",
+          "english",
+          "vocabulary",
+          "shadowing",
+          "mindmap",
+          "podcast",
+          "reading"
+        ],
+        "labels": [
+          "local",
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 83
+        }
+      },
+      "versions": [
+        {
+          "version": "1.6.0",
+          "publishTimestamp": 1794137859,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-reader",
+            "commit": "c86f5d9a1f943ded63b7f984bded1979d1fc8ebe",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-agent-team-board",
+      "title": {
+        "en": "Agent Team Board",
+        "zh": "智能体团队看板"
+      },
+      "description": {
+        "en": "A Team Board tab beside Trajectory shows how an Agent Team is cooperating: one column per teammate with shared tasks, status counts, token cost and the files they produced. Click an avatar for a member panel covering duty, artifacts, workload and spend.",
+        "zh": "在 Trajectory 旁新增「团队看板」页签，显示智能体团队如何协作：一列一个队友，列出共享任务、待办/进行中/完成计数、token 成本与实际产出的文件。点开头像可打开成员面板，查看职责、产物、工作量与消耗。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkFnZW50IFRlYW0gYm9hcmQiPgogIDxyZWN0IHg9IjUiIHk9IjkiIHdpZHRoPSIxNSIgaGVpZ2h0PSI0NiIgcng9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJmNmZlYiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHJlY3QgeD0iMjQuNSIgeT0iOSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjM0IiByeD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmY2ZmViIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cmVjdCB4PSI0NCIgeT0iOSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjIyIiByeD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmY2ZmViIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cGF0aCBkPSJNOSAxOGg3TTI4LjUgMThoN000OCAxOGg3IiBzdHJva2U9IiMyZjZmZWIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-agent-team-board",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-agent-team-board",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "agent",
+          "team",
+          "board",
+          "teammate",
+          "multi-agent",
+          "tasks",
+          "token",
+          "cost",
+          "workload"
+        ],
+        "labels": [
+          "collaboration",
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 82
+        }
+      },
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1793893484,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-agent-team-board",
+            "commit": "ac941fc523bce6b341c4013ae1f3481d3b38bc6d",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-remote-control",
+      "title": {
+        "en": "Remote Control",
+        "zh": "手机远程控制"
+      },
+      "description": {
+        "en": "Drive the DeepSeek Harness agent from your phone. Scan the QR code in Settings or open the access link, and the phone loads the web app through a relay tunnel, so sessions, streaming output and tool approvals behave as on desktop. Devices can be revoked.",
+        "zh": "用手机远程操控本机的 DeepSeek Harness 智能体。在设置页扫二维码或打开访问链接，手机通过中继隧道加载真实的网页应用：会话、流式输出、工具审批和输入框与桌面端一致。可随时吊销已授权设备，宿主不会对公网开放入站端口。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlJlbW90ZSBDb250cm9sIj4KICA8cmVjdCB4PSIxMiIgeT0iNiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjM0IiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmY2ZmViIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cGF0aCBkPSJNNCA0NGEyOCAyOCAwIDAgMSAyOC0yOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmY2ZmViIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik00IDU0YTQwIDQwIDAgMCAxIDQwLTQwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyZjZmZWIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHJlY3QgeD0iMjAiIHk9IjE0IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHJ4PSIyIiBmaWxsPSIjMmY2ZmViIi8+CiAgPHJlY3QgeD0iMzQiIHk9IjE0IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHJ4PSIyIiBmaWxsPSIjMmY2ZmViIi8+CiAgPHJlY3QgeD0iMjAiIHk9IjI4IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHJ4PSIyIiBmaWxsPSIjMmY2ZmViIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHJlY3QgeD0iMzQiIHk9IjI4IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHJ4PSIyIiBmaWxsPSIjMmY2ZmViIi8+CiAgPHBhdGggZD0iTTI2IDUyaDEybC02IDh6IiBmaWxsPSIjMmY2ZmViIi8+Cjwvc3ZnPgo=",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-remote-control",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-remote-control",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "remote",
+          "phone",
+          "mobile",
+          "tunnel",
+          "relay",
+          "qrcode",
+          "access-code",
+          "control",
+          "local"
+        ],
+        "labels": [
+          "desktop",
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 80
+        }
+      },
+      "versions": [
+        {
+          "version": "1.5.5",
+          "publishTimestamp": 1794140559,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-remote-control",
+            "commit": "b557953316d10a1e4575e54d8c0d979a19b15feb",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-pet",
+      "title": {
+        "en": "Desktop Pet",
+        "zh": "桌面宠物"
+      },
+      "description": {
+        "en": "A transparent desktop pet inside DeepSeek Harness: a hundred plus looping animations, multiple pets at once, click and drag physics, chatter and chat, session-aware work animations, to-do reminders, system notifications. Browser overlay or native window.",
+        "zh": "住在 DeepSeek Harness 里的透明桌面宠物：一百余段动画、可多开同屏、大小与位置可配，点击会 Q 弹、拖拽能甩抛，还有碎碎念与对话、跟随会话切换的工作状态动画、待办提醒和系统通知。可跑在网页浮层，也能住进桌面置顶小窗。"
+      },
+      "icon": "data:image/png;base64,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",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-pet",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-pet",
+        "directory": "dsh-pet"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "pet",
+          "desktop",
+          "animation",
+          "overlay",
+          "companion",
+          "mascot",
+          "chibi",
+          "sprites"
+        ],
+        "labels": [
+          "desktop",
+          "media"
+        ],
+        "sortKeys": {
+          "recommended": 78
+        }
+      },
+      "versions": [
+        {
+          "version": "0.4.5",
+          "publishTimestamp": 1793940420,
+          "source": {
+            "type": "npm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-management",
+      "title": {
+        "en": "Plugin Management",
+        "zh": "插件管理"
+      },
+      "description": {
+        "en": "Extends the Plugins page with an Updates tab listing every installed plugin that has a newer version, its release notes and a one-click upgrade, plus an update badge beside each title. A Share button exports a plugin to another profile.",
+        "zh": "在插件页新增「更新」页签，列出所有已安装插件中可升级的版本、发布说明与一键升级按钮，并在插件标题旁显示更新角标；插件详情页的「分享」按钮还能把插件导出给另一个 profile。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSI0LjUiIHk9IjQuNSIgd2lkdGg9IjI3IiBoZWlnaHQ9IjI3IiByeD0iOCIgc3Ryb2tlPSJ1cmwoI3BtLXN0cm9rZSkiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxwYXRoIGQ9Ik0xMS41IDE5LjVhNyA3IDAgMSAwIDIuMi02IiBzdHJva2U9InVybCgjcG0tc3Ryb2tlKSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTEuNSAxMS41VjE1SDE1IiBzdHJva2U9InVybCgjcG0tc3Ryb2tlKSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0icG0tc3Ryb2tlIiB4MT0iNiIgeTE9IjMwIiB4Mj0iMzAiIHkyPSI2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM2N0M3RkUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM0Y3N0Q4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KPC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-plugin-management",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-plugin-management",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "plugin",
+          "market",
+          "update",
+          "upgrade",
+          "version",
+          "share",
+          "install",
+          "release-notes"
+        ],
+        "labels": [
+          "collaboration",
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 72
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793712784,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-plugin-management",
+            "commit": "fc453e953b2d3f25d9e6ea363bbb039d309c6346",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-purge",
+      "title": {
+        "en": "Model Prompt Overrides",
+        "zh": "模型提示词增强"
+      },
+      "description": {
+        "en": "Replace the system prompt the Harness injects into a model: ready-made prompt sets, a per-model switch, and a default set for Chinese models. A drill console is limited to loopback and private-network targets, to tell a host-policy block from a model refusal.",
+        "zh": "可替换 DeepSeek Harness 注入给模型的系统提示词，内置多套提示词方案并支持按模型切换，默认方案面向国产模型。演练台只允许回环与内网靶场，用来分辨宿主策略拦截和模型本身拒答。支持的宿主版本各不相同，安装前请先看仓库 README。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkQiPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjNjM1QkZGIi8+PHRleHQgeD0iMzIiIHk9IjM0IiBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0iLWFwcGxlLXN5c3RlbSxCbGlua01hY1N5c3RlbUZvbnQsJ1NlZ29lIFVJJyxIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzMiIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPkQ8L3RleHQ+PC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-purge",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-purge"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "prompt",
+          "system-prompt",
+          "override",
+          "red-team",
+          "evaluation",
+          "security",
+          "preset",
+          "sandbox",
+          "local"
+        ],
+        "labels": [
+          "local"
+        ],
+        "sortKeys": {
+          "recommended": 55
+        }
+      },
+      "versions": [
+        {
+          "version": "1.1.81",
+          "publishTimestamp": 1793117170,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-purge",
+            "commit": "160b9114cbad7beca3d4d3f9f027ec843bf46f5e"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-chatbox-pet",
+      "title": {
+        "en": "Chatbox Pet",
+        "zh": "输入框伴侣"
+      },
+      "description": {
+        "en": "A Pikachu pinned to the composer's top-right. Idle most of the time, it moves only when the agent's work state changes — and a finished task, a stopped one and a failed one each get their own clip and sound. Call it by name in the composer (no send) and it answers; right-click to make it say a line you give it, keep the lines it said before, bring up something from your memory / meeting minutes / reading shelf / moments, or play one of 17 animations. The prompt booster ships in the same bundle as a second, independently toggleable feature. A merge chip also folds 2–8 queued follow-ups into one coherent message while the agent is busy.",
+        "zh": "挂在输入框右上角的皮卡丘。大部分时间安静待着，只在智能体工作状态变化时动一下，并且「完成 / 被中止 / 失败」三种结局各有自己的动作与音效。在输入框里喊它的名字（不用发送）它会回应；右键可以让它说指定的话、记住说过的台词、从你的记忆 / 会议纪要 / 读书 / 随手记里挑一件事说出来，或者播放 17 个动作之一。提示词增强作为第二个可独立开关的功能合在同一个 bundle 里。 智能体忙的时候，还能把 2–8 条排队消息合并成一条完整请求。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB4PSI0IiB5PSIxNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjE4IiByeD0iOSIgc3Ryb2tlPSJ1cmwoI2NicC1ib3gpIiBzdHJva2Utd2lkdGg9IjIuNCIvPgogIDxwYXRoIGQ9Ik04IDIwaDEyTTggMjVoNyIgc3Ryb2tlPSJ1cmwoI2NicC1ib3gpIiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIyNiIgY3k9IjkiIHI9IjYuNSIgZmlsbD0idXJsKCNjYnAtcGV0KSIvPgogIDxwYXRoIGQ9Ik0yMy4yIDYuNmwtMS42LTMuMiAzLjQgMS40TTI4LjggNi42bDEuNi0zLjItMy40IDEuNCIgZmlsbD0idXJsKCNjYnAtcGV0KSIvPgogIDxjaXJjbGUgY3g9IjI0LjIiIGN5PSI4LjYiIHI9IjAuOSIgZmlsbD0iIzViM2EwMCIvPgogIDxjaXJjbGUgY3g9IjI3LjgiIGN5PSI4LjYiIHI9IjAuOSIgZmlsbD0iIzViM2EwMCIvPgogIDxwYXRoIGQ9Ik0yNS4yIDExLjJjLjUuNSAxLjEuNSAxLjYgMCIgc3Ryb2tlPSIjNWIzYTAwIiBzdHJva2Utd2lkdGg9IjAuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImNicC1ib3giIHgxPSI0IiB5MT0iMTQiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNCNDY5MEUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOEE0RjBBIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJjYnAtcGV0IiB4MT0iMTkuNSIgeTE9IjIuNSIgeDI9IjMyLjUiIHkyPSIxNS41IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGRkQzNEQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRjBBMDIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KPC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-chatbox-pet",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-chatbox-pet",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "animation",
+          "chat",
+          "companion",
+          "composer",
+          "follow-up",
+          "merge",
+          "pet",
+          "pikachu",
+          "prompt",
+          "queue",
+          "sound",
+          "status"
+        ],
+        "labels": [
+          "productivity"
+        ],
+        "sortKeys": {
+          "recommended": 78
+        }
+      },
+      "versions": [
+        {
+          "version": "0.2.1",
+          "publishTimestamp": 1794196050,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-chatbox-pet",
+            "commit": "ff421d87ea9cb66816313bf3068b1f48254b121d",
+            "path": "plugin"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-video-lens",
+      "title": {
+        "en": "Video Lens",
+        "zh": "视频理解"
+      },
+      "description": {
+        "en": "A host tool that lets the model actually watch a video: hand it a local file or a YouTube / X / Bilibili / TikTok / Vimeo link and get metadata, a timestamped transcript with speaker labels, the burned-in subtitles read off the frames, and keyframe images it can open. Transcription, speaker diarization and OCR all run on your machine — no cloud ASR, no upload — and WeChat Channels links are refused with an explanation and a workaround instead of being faked.",
+        "zh": "让模型真正看懂视频的宿主工具：传入本地文件或 YouTube / X / Bilibili / TikTok / 抖音 / Vimeo 链接，返回元数据、带时间码与说话人标签的逐段转写、画面烧录字幕（OCR）以及可以逐张查看的关键帧。转写、说话人分离、OCR 全部在本机完成，不上传音频也不调云端 ASR；微信视频号没有公开直链，明确拒绝并给出导出/录屏的替代做法，不假装解析。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxYzFjMWUiLz4KICA8cmVjdCB4PSIxMiIgeT0iMTciIHdpZHRoPSI0MCIgaGVpZ2h0PSIyNiIgcng9IjUiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8cGF0aCBkPSJNMTIgMjNoNDBNMTIgMzdoNDAiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii40NSIvPgogIDxwYXRoIGQ9Ik0xOCAxN3Y2TTI2IDE3djZNMzQgMTd2Nk00MiAxN3Y2TTE4IDM3djZNMjYgMzd2Nk0zNCAzN3Y2TTQyIDM3djYiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii40NSIvPgogIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzAiIHI9IjciIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8cGF0aCBkPSJNMzcuNSAzNS41IDQzIDQxIiBzdHJva2U9IiNGRkM0NkIiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMjQgNTBoMTYiIHN0cm9rZT0iI0ZGQzQ2QiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iLjciLz4KPC9zdmc+Cg==",
+      "author": "colsonSung",
+      "homepage": "https://github.com/colsonSung/dsh-video-lens",
+      "repository": {
+        "url": "https://github.com/colsonSung/dsh-video-lens",
+        "directory": "plugin"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "video",
+          "transcript",
+          "subtitle",
+          "ocr",
+          "diarization",
+          "speaker",
+          "youtube",
+          "bilibili",
+          "twitter",
+          "frames",
+          "ffmpeg",
+          "whisper"
+        ],
+        "labels": [
+          "local",
+          "media"
+        ],
+        "sortKeys": {
+          "recommended": 79
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794306259,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/colsonSung/dsh-video-lens",
+            "commit": "9af6a0d42c6508c7eb944c4a35ad84a4c3c9a23b",
+            "path": "plugin"
+          }
+        }
+      ]
+    }
+  ]
+}
