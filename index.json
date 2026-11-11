@@ -563,12 +563,12 @@
       },
       "versions": [
         {
-          "version": "0.8.0",
-          "publishTimestamp": 1794368940,
+          "version": "0.9.0",
+          "publishTimestamp": 1794370200,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-chatbox-pet",
-            "commit": "3ff5301c9a3d800da3ed9bcc39336e9455bd3d8d",
+            "commit": "975c6c84b17a6a01762d79fc546198b8931b2717",
             "path": "plugin"
           }
         }
