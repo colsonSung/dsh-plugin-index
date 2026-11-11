@@ -158,12 +158,12 @@
       },
       "versions": [
         {
-          "version": "3.4.3",
-          "publishTimestamp": 1794313167,
+          "version": "3.7.0",
+          "publishTimestamp": 1794391859,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-moments-notes",
-            "commit": "d32143ebcd6dafa6c4147efd6e1a734bddab2537",
+            "commit": "d5519f54a60726e1b5e1c1a982486f9dd3f769e2",
             "path": "plugin"
           }
         }
@@ -563,12 +563,12 @@
       },
       "versions": [
         {
-          "version": "0.13.0",
-          "publishTimestamp": 1794374951,
+          "version": "0.13.1",
+          "publishTimestamp": 1794409116,
           "source": {
             "type": "git",
             "url": "https://github.com/colsonSung/dsh-chatbox-pet",
-            "commit": "e69e29ec7ce5edae38e43240a2ab30ca67159cc7",
+            "commit": "86ab8ff259cdcc28cf0709d1eb8eb379e4afe6a7",
             "path": "plugin"
           }
         }
